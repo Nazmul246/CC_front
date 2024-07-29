@@ -62,3 +62,21 @@ smallimg[2].onclick = function(){
 smallimg[3].onclick = function(){
   MainImg.src = smallimg[3].src;
 }
+
+// cart alert
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Select all cart links
+  const cartLinks = document.querySelectorAll('.cart-link');
+
+  // Add click event listener to each cart link
+  cartLinks.forEach(function(cartLink) {
+    cartLink.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default action (navigation)
+      alert('One product added to the cart'); // Show the alert box
+      console.log('Alert should show'); // Debugging message
+    });
+  });
+
+  console.log('Script loaded and event listeners attached'); // Debugging message
+});

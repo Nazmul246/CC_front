@@ -197,6 +197,20 @@ body{
   padding: 40px;
 }
 
+.feature-box button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: font-size 0.3s ease;
+}
+
+.feature-box button:hover{
+  /* box-shadow: 10px 10px 54px #b61010; */
+  color: #558e60;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 #feature .feature-box{
   width: 300px;
   text-align: center;
@@ -205,6 +219,7 @@ body{
   border: 1px solid #cce7d0;
   border-radius: 4px;
   margin: 15px 0;
+  transition: box-shadow 0.3s ease;
 }
 
 #feature .feature-box:hover{
@@ -260,7 +275,7 @@ body{
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px 0;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
   position: relative;
 }
 
@@ -374,14 +389,14 @@ footer a{
 #nw-banner .banner-box{
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
-  padding: 20px;
   background-image: url(../img/bedC2.jpg);
-  min-width: 320px;
+  min-width: 300px;
+  margin: 20px;
   height: 250px;
   background-size: cover;
   background-position: center;
+  padding: 10px 12px;
 }
 
 #nw-banner .banner-box2{
@@ -944,6 +959,16 @@ a {
 
   .allText.bottomText {
     margin: 40px 0 0 0;
+  }
+
+  /* homepage banner */
+  #nw-banner .banner-box{
+    margin-left: 70px;
+  }
+
+  /* homepage feature section */
+  #feature{
+    margin-left: 30px;
   }
 }
 
